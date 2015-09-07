@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UI router - simple app</title>
+  <script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+  <script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</head>
+<body ng-app="simple-ui-router">
+  <a href="/party" ui-sref="party">Go to the party</a>
+  <a href="addd" ui-sref="partyDetail({ partyID: 6, partyLocation: 'Govora'})">See the party</a>
+  <a href="/amidon/5">Amidon</a>
+  <div ui-view></div>
+</body>
+</html>
